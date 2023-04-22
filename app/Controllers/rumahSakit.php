@@ -184,6 +184,10 @@ class rumahSakit extends BaseController
         $this->ModelRumkit->update_data($data);
       }else{
         $detail = $this->ModelRumkit->detail_data($id_rumkit);
+        $fileName_old = $detail['foto'];
+				if (file_exists("img/".$fileName_old)) {
+          unlink('img/'.$detail['foto']);
+        }
         $fileName = $dataBerkas->getRandomName();
         $data = array(
           'id_rumkit' => $id_rumkit,
@@ -204,6 +208,11 @@ class rumahSakit extends BaseController
   }
 
 	public function delete_data($id_rumkit){
+		$detail = $this->ModelRumkit->detail_data($id_rumkit);
+    $fileName = $detail['foto'];
+		if (file_exists("img/".$fileName_old)) {
+			unlink('img/'.$detail['foto']);
+		}
     $data = array(
       'id_rumkit' => $id_rumkit,
     );

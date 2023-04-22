@@ -33,7 +33,7 @@ class Database extends \CodeIgniter\Database\Config
 		'DSN'      => '',
 		'hostname' => 'localhost',
 		'username' => 'root',
-		'password' => '011235813',
+		'password' => '',
 		'database' => 'db_gisrumkit',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
