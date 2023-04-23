@@ -10,7 +10,7 @@
 
 <div class="col-sm-5">
   <div class="panel panel-default">
-    <div class="panel-heading">Edit Data Kantor</div>
+    <div class="panel-heading">Edit Data Rumah Sakit</div>
     <!-- /.panel-heading -->
     <div class="panel-body">
       <?php if (!empty(session()->getFlashdata('errors'))) : ?>

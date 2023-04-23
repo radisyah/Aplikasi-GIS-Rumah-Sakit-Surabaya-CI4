@@ -2,10 +2,10 @@
         <!-- Left navbar links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="<?= base_url('allUser') ?>" class="nav-link">Home</a>
+            <a href="<?= base_url('allUser') ?>" class="nav-link <?= $nav == 'Home' ? 'active' : '' ?>">Home</a>
           </li>
           <li class="nav-item">
-            <a href="<?= base_url('allUser/lokasi') ?>" class="nav-link">Lokasi</a>
+            <a href="<?= base_url('allUser/lokasi') ?>" class="nav-link <?= $nav == 'Lokasi' ? 'active' : '' ?>">Lokasi</a>
           </li>
         </ul>
 

@@ -210,7 +210,7 @@ class rumahSakit extends BaseController
 	public function delete_data($id_rumkit){
 		$detail = $this->ModelRumkit->detail_data($id_rumkit);
     $fileName = $detail['foto'];
-		if (file_exists("img/".$fileName_old)) {
+		if (file_exists("img/".$fileName)) {
 			unlink('img/'.$detail['foto']);
 		}
     $data = array(
